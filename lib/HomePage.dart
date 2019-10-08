@@ -15,8 +15,10 @@ class _HomeState extends State<Home> {
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.search),
-            onPressed: null,
-          )
+            onPressed: ()=>debugPrint("Search")),
+          IconButton(
+            icon: Icon(Icons.add),
+            onPressed: ()=>debugPrint("Add"))
         ],
 
       ),
