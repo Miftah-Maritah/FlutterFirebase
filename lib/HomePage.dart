@@ -31,13 +31,24 @@ class _HomeState extends State<Home> {
               leading: Icon(Icons.home, color: Colors.cyan),
             ),
             ListTile(
-              title: Text("First Page"),
-              leading: Icon(Icons.home, color: Colors.cyan),
+              title: Text("Second Page"),
+              leading: Icon(Icons.card_giftcard, color: Colors.cyan),
             ),
             ListTile(
-              title: Text("First Page"),
-              leading: Icon(Icons.home, color: Colors.cyan),
-            )
+              title: Text("Third Page"),
+              leading: Icon(Icons.security, color: Colors.cyan),
+            ),
+            Divider(
+              height: 10,
+              color: Colors.black,
+            ),
+             ListTile(
+              title: Text("Third Page"),
+              trailing: Icon(Icons.close, color: Colors.redAccent),
+              onTap: (){
+                Navigator.of(context).pop();
+              },
+            ),
           ],
         ),
       ),
