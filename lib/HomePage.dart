@@ -23,7 +23,13 @@ class _HomeState extends State<Home> {
 
       ),
       drawer: Drawer(
-        child: ListView(),
+        child: ListView(
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              accountName: Text("Muhammad Miftah"),
+              accountEmail: Text("muhammad.miftah.ft18@mail.umy.ac.id"),)
+          ],
+        ),
       ),
       
     );
